@@ -20,9 +20,9 @@ try {
   console.warn('⚠ CV data file not found or invalid. Running without embedded CV context.');
 }
 
-// Initialize Groq client with the provided API key
+// Initialize Groq client with API key from environment variable
 const groq = new Groq({
-  apiKey: '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'
+  apiKey: process.env.GROQ_API_KEY
 });
 
 // Store the latest uploaded document text to include in AI context
