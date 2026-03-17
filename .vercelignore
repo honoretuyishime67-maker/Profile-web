@@ -1,0 +1,7 @@
+# Ignore backend files for static deployment
+server.js
+package.json
+package-lock.json
+node_modules
+npm-debug.log
+.vscode
