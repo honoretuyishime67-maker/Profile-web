@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Tuyishime Honore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="compact">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="roles.html">Roles</a>
+      <a href="development.html">Development</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="vision.html">Vision</a>
+      <a href="ministry.html">Ministry</a>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <section class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">
+        I’d love to connect for collaboration, speaking, or projects—feel free to reach out using your preferred method.
+      </p>
+
+      <div class="card-grid contact-grid">
+        <div class="card">
+          <h3>Contact</h3>
+          <p><strong>Email</strong><br />
+            <a href="mailto:tuyishimehonore63@gmail.com">tuyishimehonore63@gmail.com</a>
+          </p>
+          <p><strong>Phone</strong><br />
+            <a href="tel:+250791684429">+250 791 684 429</a>
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>Connect</h3>
+          <p>Find me online to explore new ideas, share resources, or collaborate on impact-driven work.</p>
+          <p>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> •
+            <a href="https://www.youtube.com/@TuyishimeHonore-qt9hd" target="_blank" rel="noopener noreferrer">ICT YouTube</a>
+          </p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <h3>Download CV</h3>
+          <p>Grab a copy of my current resume to see my full experience, education, and training.</p>
+          <a class="btn" href="Document/Honore curriculum vitae.pdf" download="Honore curriculum vitae.pdf">Download CV</a>
+        </div>
+
+        <div class="card">
+          <h3>Send a Message</h3>
+          <form action="mailto:tuyishimehonore63@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps?q=Rukara+Model+School+of+Sciences+and+Mathematics&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="roles.html">Roles</a></li>
+              <li><a href="development.html">Development</a></li>
+              <li><a href="education.html">Education</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="ministry.html">Ministry</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="https://www.youtube.com/@tuyishimehonore9611" target="_blank" rel="noopener noreferrer">Ministry YouTube</a></li>
+              <li><a href="https://www.youtube.com/@TuyishimeHonore-qt9hd" target="_blank" rel="noopener noreferrer">ICT YouTube</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <small>© 2026 Tuyishime Honore | Transforming Education &amp; Lives in Rwanda</small>
+      </div>
+    </div>
+  </footer>
+
+  <div id="ai-widget" class="ai-widget collapsed" aria-label="AI chat assistant">
+    <button id="ai-toggle" class="ai-toggle" type="button" aria-expanded="false" aria-label="Chart with Honore" title="Click to open the chat">Chart with Honore</button>
+    <div class="ai-panel" role="dialog" aria-label="AI chat">
+      <div class="ai-header">
+        <div class="ai-profile">
+          <img class="ai-avatar" src="profile.jpg" alt="Honore" />
+          <div>
+            <div class="ai-name">Honore</div>
+            <div class="ai-status">Live chart</div>
+          </div>
+        </div>
+        <button id="ai-close" class="ai-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="ai-live" aria-label="Live status">
+        <span class="ai-bar"></span>
+        <span class="ai-bar"></span>
+        <span class="ai-bar"></span>
+      </div>
+      <div class="ai-messages" id="ai-messages" aria-live="polite"></div>
+      <form id="ai-form" class="ai-form">
+        <input id="ai-input" class="ai-input" type="text" placeholder="Ask me anything..." autocomplete="off" required />
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

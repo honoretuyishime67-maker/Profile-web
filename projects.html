@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Tuyishime Honore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="compact">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="roles.html">Roles</a>
+      <a href="development.html">Development</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="vision.html">Vision</a>
+      <a href="ministry.html">Ministry</a>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <section class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Projects</h2>
+      <p class="section-subtitle">
+        Web applications and tools I’ve built to support education and planning.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Digital Lesson Plan</h3>
+          <p>A lesson-planning web app designed to help teachers quickly build, organize, and share standards-aligned lesson plans.</p>
+          <p><a href="https://digital-lesson-plan.vercel.app/" target="_blank" rel="noopener noreferrer">View the live app</a></p>
+        </div>
+
+        <div class="card">
+          <h3>ICT Education YouTube Channel</h3>
+          <p>Dedicated to helping teachers and students learn about Information and Communication Technology (ICT) in education. Features tutorials, tips, and resources for integrating digital tools into teaching and learning.</p>
+          <p><a href="https://www.youtube.com/@TuyishimeHonore-qt9hd" target="_blank" rel="noopener noreferrer">Visit the ICT YouTube Channel</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps?q=Rukara+Model+School+of+Sciences+and+Mathematics&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="roles.html">Roles</a></li>
+              <li><a href="development.html">Development</a></li>
+              <li><a href="education.html">Education</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="ministry.html">Ministry</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="https://www.youtube.com/@tuyishimehonore9611" target="_blank" rel="noopener noreferrer">Ministry YouTube</a></li>
+              <li><a href="https://www.youtube.com/@TuyishimeHonore-qt9hd" target="_blank" rel="noopener noreferrer">ICT YouTube</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <small>© 2026 Tuyishime Honore | Transforming Education &amp; Lives in Rwanda</small>
+      </div>
+    </div>
+  </footer>
+
+  <div id="ai-widget" class="ai-widget collapsed" aria-label="AI chat assistant">
+    <button id="ai-toggle" class="ai-toggle" type="button" aria-expanded="false" aria-label="Chart with Honore" title="Click to open the chat">Chart with Honore</button>
+    <div class="ai-panel" role="dialog" aria-label="AI chat">
+      <div class="ai-header">
+        <div class="ai-profile">
+          <img class="ai-avatar" src="profile.jpg" alt="Honore" />
+          <div>
+            <div class="ai-name">Honore</div>
+            <div class="ai-status">Live chart</div>
+          </div>
+        </div>
+        <button id="ai-close" class="ai-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="ai-live" aria-label="Live status">
+        <span class="ai-bar"></span>
+        <span class="ai-bar"></span>
+        <span class="ai-bar"></span>
+      </div>
+      <div class="ai-messages" id="ai-messages" aria-live="polite"></div>
+      <form id="ai-form" class="ai-form">
+        <input id="ai-input" class="ai-input" type="text" placeholder="Ask me anything..." autocomplete="off" required />
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
